@@ -1,0 +1,63 @@
+.quesibolas {
+  width: 100vw;
+  background-image: url(../assets/img/Quesibolitas.jpg);
+  background-size: cover;
+  display: flex;
+  background-attachment: fixed;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.quesibolas::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.7;
+  background-color: black;
+  top: 0;
+  left: 0;
+}
+.quesiBolas_box {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.slider {
+  width: 300px;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 10px;
+  margin: 30px 20px;
+}
+.container_sliders {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  margin-left: -100%;
+}
+.containerCenter_sliders {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  margin-left: -100%;
+}
+.slide {
+  width: 300px;
+  height: 300px;
+}
+.slide_img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.slider_title {
+  margin: 10px 0;
+  text-align: center;
+}
+.slider_texto {
+  text-align: center;
+}

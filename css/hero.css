@@ -1,0 +1,56 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/img/Platillo2.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  background-attachment: fixed;
+}
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.7;
+  background-color: black;
+  top: 0;
+  left: 0;
+}
+.hero_center {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  z-index: 1;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.hero_content {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero_title {
+  margin: 10px;
+  line-height: 65px;
+  text-align: center;
+}
+.hero_text {
+  margin: 10px;
+}
+.button--hero {
+  width: 220px;
+}
+
+/*MOVIL TABLET */
+@media (max-width: 768px) {
+  .hero_content {
+    width: 550px;
+  }
+}
+/*MOVIL GRANDE*/
+@media (max-width: 425px) {
+}

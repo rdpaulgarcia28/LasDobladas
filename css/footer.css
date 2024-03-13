@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.conteiner_footer {
+  width: 90%;
+  height: 80%;
+  border-top: white solid 1px;
+  padding-top: 30px;
+}
+.datos_direcction {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.datos_direcction span {
+  font-size: 12px;
+}
+.datos_direcction a {
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 7px;
+  border-radius: 3px;
+}
+.conteiner_icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.conteiner_icons img {
+  margin-right: 10px;
+}
+.conteiner_icons span {
+  width: 1px;
+  height: 30px;
+  background-color: white;
+}
+.icons {
+  width: 20px;
+  height: 20px;
+}
+.datos_subscribe {
+  width: 50%;
+}
+.span_magin {
+  margin-bottom: 10px;
+}
