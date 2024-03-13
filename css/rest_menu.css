@@ -14,10 +14,3 @@
     margin-right: auto;
   }
 }
-@media (max-width: 425px) {
-  .rest_menu_img {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
