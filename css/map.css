@@ -46,6 +46,44 @@
   text-decoration: none;
   margin-top: 10px;
 }
+.button_map span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 1px solid orangered;
+}
+
+.button_map span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+.button_map:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: rgb(151, 41, 1);
+}
+
+.button_map:hover {
+  color: white;
+}
+
+.button_map:active span::before {
+  background: #2751cd;
+}
+
 .box_map {
   width: 400px;
   height: 400px;

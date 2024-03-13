@@ -1,4 +1,4 @@
-button {
+.button--hero {
   border: none;
   display: block;
   position: relative;
@@ -14,9 +14,11 @@ button {
   font-size: 18px;
   border-radius: 10px;
   background: orangered;
+  text-decoration: none;
+  text-align: center;
 }
 
-button span {
+.button--hero span {
   position: absolute;
   left: 0;
   top: 0;
@@ -27,7 +29,7 @@ button span {
   border: 1px solid orangered;
 }
 
-button span::before {
+.button--hero span::before {
   content: "";
   display: block;
   position: absolute;
@@ -40,16 +42,16 @@ button span::before {
   transition: all 0.3s;
 }
 
-button:hover span::before {
+.button--hero:hover span::before {
   transform: translate(-50%, -50%) rotate(-90deg);
   width: 100%;
   background: rgb(151, 41, 1);
 }
 
-button:hover {
+.button--hero:hover {
   color: white;
 }
 
-button:active span::before {
+.button--hero:active span::before {
   background: #2751cd;
 }
